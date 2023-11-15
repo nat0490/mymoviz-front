@@ -17,7 +17,7 @@ function Home() {
     fetch('https://mymoviz-backend-two-phi.vercel.app/movies')
       .then(response => response.json())
       .then(data => { 
-        setMoviesData(data)
+        setMoviesData(data.movies)
         }) 
   },[]);
 
